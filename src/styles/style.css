@@ -8,6 +8,10 @@
   color: #fff;
   padding: 1rem;
 }
+.layout header .main__menu {
+  display: flex;
+  flex-direction: row;
+}
 .layout header nav ul {
   list-style: none;
   display: flex;
