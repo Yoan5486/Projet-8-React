@@ -1,16 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logoKasa from '../images/LOGO.png';  
-import "../styles/style.css"
+import logoKasa from '../images/LOGO.png'; 
 
 const Header = () => (
   <header>
     <nav className = "main__menu">
-      <img src={logoKasa} alt = "Logo Kasa"/>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-       {/* <li><Link to="/contact">Contact</Link></li> */}
+      <img className = "margin__logo"src={logoKasa} alt = "Logo Kasa"/>
+      <ul className= "align__nav">
+        <li className="link__home"><Link to="/">Accueil</Link></li>
+        <li className='link__about'><Link to="/about">A Propos</Link></li>
       </ul>
     </nav>
   </header>
