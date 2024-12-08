@@ -3,7 +3,7 @@ import logoKasaWhite from '../images/LOGO_white.png';
 
 const Footer = () => (
   <footer>
-    <img className = "logo__white" src={logoKasaWhite} alt = "Logo Kasa White"/>
+    <img className = "logo__white" src={logoKasaWhite} alt = "Logo Kasa Blanc"/>
     <p className="copyright">&copy; 2020 Kasa. All rights reserved</p>
   </footer>
 );
