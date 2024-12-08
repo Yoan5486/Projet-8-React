@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
-html {
-  max-height: 1520px;
+@mixin background__img {
+  width: 1240px;
+  height: 223px; 
+  border-radius: 25px;
+  position: relative;
 }
 body {
   font-family: 'Montserrat';
@@ -56,14 +59,25 @@ header {
   }  
 }
 main {
+  .box__dimension {
+    height: 273px;
+  }
+  .background__black {
+    background-color: black;
+    @include background__img();
+    z-index: 1;
+    top: 52px;
+    
+  }
   .img__background--home {
-    width: 1240px;
-    height: 223px;
     object-fit: cover;
-    position: relative;
+   @include background__img();
     margin-top: 50px;
-    border-radius: 25px;
     box-shadow: 0px 4px 4px 0px #00000040;
+    z-index: 10;
+    opacity: 60%;
+    bottom: 221px;
+
   }
   .title__home {
     color: white;
@@ -76,9 +90,10 @@ main {
     1px 1px 0 black;  
     width: 733px;
     height: 68px;
-    top: 241px;
-    left: 373px;
+    top: 237px;
+    left: 363px;
     margin: 0; 
+    z-index: 15;
 
   }
   .cards {
@@ -143,6 +158,8 @@ footer {
   font-size: 24px;
   font-weight: 500;
 }
+
+
 
 
 

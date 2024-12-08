@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
-html {
-  max-height: 1520px;
-}
-
 body {
   font-family: "Montserrat";
   max-width: 1440px;
@@ -61,15 +57,30 @@ main {
   margin-right: auto;
   margin-left: auto;
 }
-main .img__background--home {
+main .box__dimension {
+  height: 273px;
+}
+main .background__black {
+  background-color: black;
   width: 1240px;
   height: 223px;
+  border-radius: 25px;
+  position: relative;
+  z-index: 1;
+  top: 52px;
+}
+main .img__background--home {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
   position: relative;
   margin-top: 50px;
-  border-radius: 25px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  z-index: 10;
+  opacity: 60%;
+  bottom: 221px;
 }
 main .title__home {
   color: white;
@@ -79,9 +90,10 @@ main .title__home {
   text-shadow: -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
   width: 733px;
   height: 68px;
-  top: 241px;
-  left: 373px;
+  top: 237px;
+  left: 363px;
   margin: 0;
+  z-index: 15;
 }
 main .cards {
   display: flex;
