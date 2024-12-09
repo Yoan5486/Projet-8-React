@@ -120,7 +120,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     width: 1240px;
-    height: 781px;
+    height: 100%;
     background-color: #F6F6F6;
     border-radius: 25px;
     margin-top: 43px;
@@ -228,7 +228,12 @@ footer {
         margin-top: 20px;
         margin-right: 0;
         margin-left: 0;
-      }
+        cursor: pointer;
+        transition: transform 0.2s ease; /* Animation au survol */
+         }
+        .card:hover {
+       transform: scale(1.02);
+       }
       .title__card {
         top: 185px;
         left: 20px;
@@ -242,7 +247,7 @@ footer {
       margin: 6px 0 27px 0;
       padding: 0;
     }
-    height: 1820px;
+    height: 100%;
   }
   
   .copyright {

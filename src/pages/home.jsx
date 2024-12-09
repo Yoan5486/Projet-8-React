@@ -1,8 +1,18 @@
-import React from 'react';
-import backgroundHome from '../images/background_home.jpeg';
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import backgroundHome from '../images/background_home.jpeg'
 
 
-const Home = () => (
+const Home = () => {
+    const cards = Array(19).fill(null)
+    const navigate = useNavigate()
+
+    const handleCardClick = (path) => {
+      navigate(path)
+    }
+
+return (
+
     <div>
         <div className="box__dimension">
             <div className="background__black"></div>
@@ -10,32 +20,17 @@ const Home = () => (
             <h2 className = "title__home">Chez vous, partout et ailleurs</h2>
         </div>
         <div className='cards'>
-            <div className="card">
-                <p className="title__card">Titre de la </p>
-                <p className="title__card">location</p>
-            </div>
-            <div className="card">
-                <p className="title__card">Titre de la </p>
-                <p className="title__card">location</p>
-            </div>
-            <div className="card">
-                <p className="title__card">Titre de la </p>
-                <p className="title__card">location</p>
-            </div>
-            <div className="card">
-                <p className="title__card">Titre de la </p>
-                <p className="title__card">location</p>
-            </div>
-            <div className="card">
-                <p className="title__card">Titre de la </p>
-                <p className="title__card">location</p>
-            </div>
-            <div className="card">
-                <p className="title__card">Titre de la </p>
-                <p className="title__card">location</p>
-            </div>
+        {cards.map((_, index) => (
+          <div className="card" key={index} onClick={() => handleCardClick('/details')}>
+            <p className="title__card">Titre de la<br />
+            location
+            </p>
+          </div>
+        ))}
         </div>
-       
     </div>
 )
-export default Home;
+
+}
+
+export default Home

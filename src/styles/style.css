@@ -100,7 +100,7 @@ main .cards {
   flex-direction: row;
   flex-wrap: wrap;
   width: 1240px;
-  height: 781px;
+  height: 100%;
   background-color: #F6F6F6;
   border-radius: 25px;
   margin-top: 43px;
@@ -186,7 +186,7 @@ footer {
     width: 66px;
   }
   main {
-    height: 1820px;
+    height: 100%;
   }
   main .box__dimension {
     height: 138px;
@@ -233,6 +233,11 @@ footer {
     margin-top: 20px;
     margin-right: 0;
     margin-left: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Animation au survol */
+  }
+  main .cards .card:hover {
+    transform: scale(1.02);
   }
   main .cards .title__card {
     top: 185px;

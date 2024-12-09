@@ -6,6 +6,7 @@ import About from './pages/About'
 import Error404 from './pages/Error404'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Logement from './pages/Logement'
 import "./styles/style.css" 
 
 function AppRouter ()  {
@@ -15,8 +16,9 @@ function AppRouter ()  {
     <main>
       <Routes>
       <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/About" element={<About />} />
           <Route path="*" element={<Error404 />} />
+          <Route path ="/Logement" element={<Logement />} />
       </Routes>
     </main>
     <Footer />
