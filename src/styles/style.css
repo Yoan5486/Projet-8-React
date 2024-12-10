@@ -57,8 +57,33 @@ main {
   margin-right: auto;
   margin-left: auto;
 }
+main .img__background--about {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+  position: relative;
+  margin-top: 36px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  z-index: 10;
+  opacity: 60%;
+  bottom: 221px;
+}
+main .background__black--about {
+  background-color: black;
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+  position: relative;
+  z-index: 1;
+  top: 38px;
+}
 main .box__dimension {
   height: 273px;
+}
+main .box__dimension--about {
+  height: 269px;
 }
 main .background__black {
   background-color: black;
@@ -131,6 +156,36 @@ main .cards .title__card {
   bottom: 75px;
   left: 20px;
   margin: 0;
+}
+main .flex__collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 38px;
+}
+main .flex__collapse .collapse__design {
+  width: 1023px;
+  height: 52px;
+  border-radius: 5px;
+  margin-top: 30px;
+  background-color: #FF6060;
+}
+main .flex__collapse .collapse__design .txt__collapse {
+  color: white;
+  left: 15px;
+  top: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  position: relative;
+  margin: 0;
+}
+main .flex__collapse .collapse__design .icon__chevron {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  color: white;
+  left: 970px;
+  bottom: 18px;
 }
 
 footer {

@@ -15,16 +15,16 @@ const Home = () => {
 return (
 
     <div>
-        <div className="box__dimension">
-            <div className="background__black"></div>
-            <img className = "img__background--home" src={backgroundHome} alt="Arrière plan page d'accueil"/>
+        <div className = "box__dimension">
+            <div className = "background__black"></div>
+            <img className = "img__background--home" src={backgroundHome} alt= "Arrière plan page d'accueil"/>
             <h2 className = "title__home">Chez vous, partout et ailleurs</h2>
         </div>
         <div className="cards">
         {cards.map((_, index) => (
-          <div className="card" key={index} onClick={() => handleCardClick('/details')}>
-            <img className="img__logement" src={backgroundLogement} alt = "Logement en arrière plan des cards"/>
-            <p className="title__card">Titre de la<br />
+          <div className = "card" key={index} onClick={() => handleCardClick('/details')}>
+            <img className = "img__logement" src={backgroundLogement} alt = "Logement en arrière plan des cards"/>
+            <p className = "title__card">Titre de la<br />
             location
             </p>
           </div>
