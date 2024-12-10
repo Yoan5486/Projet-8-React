@@ -155,7 +155,6 @@ main {
       .txt__collapse {
         color: white; 
         left: 15px;
-        top: 10px;
         font-weight: 700;
         font-size: 24px;
         position: relative;
@@ -167,10 +166,13 @@ main {
         width: 32px;
         height: 32px;
         color: white;
-        left: 970px;
-        bottom: 18px;
+        font-size: 1.5rem;
+        margin-right: 10px;
 
       }
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
       width: 1023px;
       height: 52px;
       border-radius: 5px;
@@ -310,6 +312,19 @@ footer {
       border-radius: 0;
       margin: 6px 0 27px 0;
       padding: 0;
+    }
+    .flex__collapse {
+      .collapse__design {
+        .txt__collapse {
+          font-size: 13px; 
+        }
+        .icon__chevron {
+          width: 16px;
+          height: 9.14px;
+        }
+        width: 100%;
+        height: 30px;
+      }
     }
     height: 100%;
   }
