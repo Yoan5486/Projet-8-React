@@ -58,7 +58,7 @@ main {
   margin-left: auto;
 }
 main .dimension__page {
-  min-height: 800px;
+  height: 100%;
 }
 main .img__background--about {
   -o-object-fit: cover;
@@ -179,7 +179,7 @@ main .flex__redbox .redbox__design {
 }
 main .flex__redbox .redbox__design .txt__redbox {
   color: white;
-  margin-left: 15px;
+  margin-left: 15px !important;
   font-weight: 700;
   font-size: 24px;
   position: relative;
@@ -330,11 +330,12 @@ footer {
     margin: 0;
   }
   main .flex__redbox .redbox__design {
-    width: 100%;
+    width: 95vw;
     height: 30px;
   }
   main .flex__redbox .redbox__design .txt__redbox {
     font-size: 13px;
+    margin-left: 10px !important;
   }
   main .flex__redbox .redbox__design .icon__chevron {
     width: 16px;
