@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 @mixin background__img ($width: 100%, $height: 223px) {
   width: $width;
@@ -10,7 +10,6 @@
 $primary-color : #FF6060;
 
 /////////////////////////////////////////////////////////////////////////
-
 
 body {
   font-family: 'Montserrat';
@@ -62,6 +61,9 @@ header {
   }  
 }
 main {
+  .dimension__page {
+    min-height: 800px;
+  }
   .img__background--about {
     object-fit: cover;
     @include background__img();
@@ -150,11 +152,11 @@ main {
     padding-top: 6px;
     padding-bottom: 43px;
   }
-  .flex__collapse {
-    .collapse__design {
-      .txt__collapse {
+  .flex__redbox {
+    .redbox__design {
+      .txt__redbox {
         color: white; 
-        left: 15px;
+        margin-left: 15px;
         font-weight: 700;
         font-size: 24px;
         position: relative;
@@ -168,11 +170,11 @@ main {
         color: white;
         font-size: 1.5rem;
         margin-right: 10px;
-
       }
       display: flex;
-      justify-content: space-between;
       align-items: center; 
+      justify-content: space-between;
+      cursor: pointer;
       width: 1023px;
       height: 52px;
       border-radius: 5px;
@@ -184,6 +186,14 @@ main {
     align-items: center;
     margin-bottom: 38px;
   }
+  .collapse__content {
+    max-width: 1023px;
+    text-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 41px;
+     font-weight: 400;
+     font-size: 18px;
+   }
   max-width: 1240px;
   margin-right: auto;
   margin-left: auto;
@@ -313,14 +323,16 @@ footer {
       margin: 6px 0 27px 0;
       padding: 0;
     }
-    .flex__collapse {
-      .collapse__design {
-        .txt__collapse {
+    .flex__redbox {
+      .redbox__design {
+        .txt__redbox {
           font-size: 13px; 
+
         }
         .icon__chevron {
           width: 16px;
           height: 9.14px;
+        
         }
         width: 100%;
         height: 30px;
