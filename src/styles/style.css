@@ -201,6 +201,35 @@ main .collapse__content {
   font-weight: 400;
   font-size: 18px;
 }
+main .error__title {
+  font-weight: 700;
+  font-size: 288px;
+  color: #FF6060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 263px;
+}
+main .title__notfound {
+  font-weight: 500;
+  text-wrap: wrap;
+  font-size: 36px;
+  color: #FF6060;
+  display: flex;
+  margin: 0;
+  margin-bottom: 139px;
+  justify-content: center;
+}
+main .link__home--error {
+  -webkit-text-decoration: underline solid;
+          text-decoration: underline solid;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 139px;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
 
 footer {
   background-color: black;
@@ -340,6 +369,10 @@ footer {
   main .flex__redbox .redbox__design .icon__chevron {
     width: 16px;
     height: 9.14px;
+  }
+  main .title__notfound {
+    margin-left: 15.33%;
+    margin-right: 15.33%;
   }
   .copyright {
     width: 133px;
