@@ -29,7 +29,7 @@ return (
             </div>
             <div className = "flex__redbox">
            {collapseTexts.map((item, index) => (
-            <div>
+            <>
           <div className = "redbox__design" key = {index} onClick={() => toggleCollapse(index)}>
             <h3 className = "txt__redbox">{item.title}</h3>
                 <FontAwesomeIcon  icon={openIndexes.includes(index) ? faChevronDown : faChevronUp} size="lg" className = "icon__chevron"/>
@@ -39,7 +39,7 @@ return (
                 <p>{item.content}</p>
               </div>
             )}
-            </div>
+            </>
            ))}
             </div>
         </div>
