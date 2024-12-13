@@ -1,5 +1,13 @@
 import React from 'react';
+import DataLogement from "../Logements.json";
 
-const logement = () => <h2>Logement</h2>;
+const logement = () => {
+    
+return (
+    
+<h2>Logement</h2>
+)
+
+}
 
 export default logement;

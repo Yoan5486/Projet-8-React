@@ -58,7 +58,7 @@ main {
   margin-left: auto;
 }
 main .dimension__page {
-  height: 100%;
+  min-height: 800px;
 }
 main .img__background--about {
   -o-object-fit: cover;
@@ -159,6 +159,8 @@ main .cards .title__card {
   bottom: 75px;
   left: 20px;
   margin: 0;
+  max-width: 320px;
+  text-wrap: wrap;
 }
 main .flex__redbox {
   display: flex;
@@ -370,6 +372,9 @@ footer {
     width: 16px;
     height: 9.14px;
   }
+  main .error__title {
+    font-size: 8em;
+  }
   main .title__notfound {
     margin-left: 15.33%;
     margin-right: 15.33%;
@@ -377,5 +382,10 @@ footer {
   .copyright {
     width: 133px;
     font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  main .collapse__content {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

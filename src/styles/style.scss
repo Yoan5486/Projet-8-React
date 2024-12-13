@@ -62,7 +62,7 @@ header {
 }
 main {
   .dimension__page {
-    height: 100%;
+    min-height: 800px;
   }
   .img__background--about {
     object-fit: cover;
@@ -139,6 +139,8 @@ main {
       bottom: 75px;
       left: 20px;
       margin: 0;
+      max-width: 320px;
+      text-wrap: wrap; 
     }
     display: flex;
     flex-direction: row;
@@ -367,6 +369,9 @@ footer {
         height: 30px;
       }
     }
+    .error__title {
+      font-size: 8em;
+    }
     .title__notfound {
      margin-left: 15.33%;
      margin-right: 15.33%;
@@ -377,4 +382,12 @@ footer {
     width: 133px;
     font-size: 12px;
   }
+}
+
+@media (max-width: 768px) {
+  main {
+    .collapse__content {
+      width: 100%;
+  }
+}
 }
