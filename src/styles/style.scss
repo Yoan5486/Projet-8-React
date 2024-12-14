@@ -238,61 +238,52 @@ main {
   }
   .slideshow {  
     .slideshow__img--container {
-      /*.slideshow__arrow {
-        position: absolute;
-        top: 400px;
-        transform: translateY(-50%);
-        font-size: 2rem;
-        color: white;
-        background: rgba(0, 0, 0, 0.5);
-        border: none;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 10;
-      }
-      
-      .slideshow__arrow:hover {
-        background: rgba(0, 0, 0, 0.8);
-      }
-      
-      .slideshow__arrow--left {
-        left: 10px;
-      }
-      
-      .slideshow__arrow--right {
-        right: 10px;
-      }
-      
-      .slideshow__counter {
-        position: absolute;
-        bottom: 15px;
-        right: 15px;
-        font-size: 1rem;
-        color: white;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 5px 10px;
-        border-radius: 5px;
-      }*/
       .slideshow__img {
         object-fit: cover;
         width: 100%; 
         height: 100%;
         transition: transform 0.5s ease-in-out;
+        border-radius: 25px;
       }
       width: 100%;
      height: 100%;
+    }
+    .slideshow__arrow {
+      position: relative;
+      font-size: 5rem;
+      color: white;
+      border: none;
+      width: 46.88px;
+      height: 79.2px;
+      cursor: pointer;
+      z-index: 10;
+      background: transparent;
+    }
+  
+    .slideshow__arrow--left {
+      left: 23px;
+      bottom: 270px;
+    }
+    
+    .slideshow__arrow--right {
+      left: 90.6%;
+      bottom: 285px;
+    }
+    
+    .slideshow__counter {
+      position: absolute;
+      font-weight: 500;
+      font-size: 18px;
+      height: 32.4px;
+      color: white;
+      background: transparent;
+      bottom: 17px;
+      right: 49%;
     }
     margin-top: 50px;;
     position: relative;
     max-width: 100%;
     height: 415px;
-    overflow: hidden;
-    border-radius: 25px;
    }
   max-width: 1240px;
   margin-right: auto;
