@@ -249,12 +249,10 @@ main {
      height: 100%;
     }
     .slideshow__arrow {
-      position: relative;
+      position: absolute;
       font-size: 5rem;
       color: white;
       border: none;
-      width: 46.88px;
-      height: 79.2px;
       cursor: pointer;
       z-index: 10;
       background: transparent;
@@ -262,12 +260,12 @@ main {
   
     .slideshow__arrow--left {
       left: 23px;
-      bottom: 270px;
+      bottom: 170px;
     }
     
-    .slideshow__arrow--right {
-      left: 90.6%;
-      bottom: 285px;
+    .slideshow__arrow--right {  
+      right: 23px;
+      bottom: 170px;
     }
     
     .slideshow__counter {
@@ -436,6 +434,19 @@ footer {
     .title__notfound {
      margin-left: 15.33%;
      margin-right: 15.33%;
+    }
+    .slideshow {
+      .slideshow__arrow {
+        font-size: 1.5rem;
+      }
+      .slideshow__arrow--left {
+        bottom: 192px;
+        left: 5.84px;
+      }
+      .slideshow__arrow--right {
+        right: 5.84px;
+        bottom: 210px;
+      }
     }
     height: 100%;
   }
