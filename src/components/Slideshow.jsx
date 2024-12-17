@@ -2,32 +2,24 @@ import React, { useState } from "react";
 
 const Slideshow = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [fade, setFade] = useState(false)
 
   const handleNext = () => {
-    setFade(true)
-    setTimeout(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
       )
-      setFade(false)
-    }, 300) 
-  }
+
+    }
 
   const handlePrev = () => {
-    setFade(true)
-    setTimeout(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
       )
-      setFade(false)
-    }, 300)
   }
 
   return (
     <div className = "slideshow">
-      <div className = {`slideshow__img--container ${fade ? "fade" : ""}`}>
-        <img src = {pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} className = "slideshow__img"/>
+      <div className = "slideshow__img--container">
+        <img src = {pictures[currentIndex]} alt = {`Slide ${currentIndex + 1}`} className = "slideshow__img"/>
         </div>
       {pictures.length > 1 && (
         <>
@@ -41,7 +33,7 @@ const Slideshow = ({ pictures }) => {
       )}
      {pictures.length > 1 && (
         <div className = "slideshow__counter">
-          {currentIndex + 1} / {pictures.length}
+          {currentIndex + 1}/{pictures.length}
         </div>
      )}
     </div>

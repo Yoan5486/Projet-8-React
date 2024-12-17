@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+$primary-color : #FF6060;
+
+
 @mixin background__img ($width: 100%, $height: 223px) {
   width: $width;
   height: $height;
@@ -7,7 +10,32 @@
   position: relative;
 }
 
-$primary-color : #FF6060;
+@mixin redbox__design ($height: 52px) {
+      display: flex; 
+      justify-content: space-between;
+      cursor: pointer;
+      height: $height;
+      background-color: $primary-color;
+}
+
+@mixin txt__redbox () {
+  color: white; 
+  font-weight: 700;
+  position: relative;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+
+@mixin icon__chevron () {
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  top: 10px;
+}
+
 
 /////////////////////////////////////////////////////////////////////////
 
@@ -139,7 +167,9 @@ main {
       left: 20px;
       margin: 0;
       max-width: 320px;
+      height: 72px;
       text-wrap: wrap; 
+      box-shadow : inset 0px -22px 10px -11px rgba(0,0,0,0.05);
     }
     display: flex;
     flex-direction: row;
@@ -156,31 +186,19 @@ main {
   .flex__redbox {
     .redbox__design {
       .txt__redbox {
-        color: white; 
-        margin-left: 15px !important ;
-        font-weight: 700;
+        @include txt__redbox();
+        margin-left: 15px;
         font-size: 24px;
-        position: relative;
-        margin: 0;
-  
       }
       .icon__chevron {
-        position: relative;
+        @include icon__chevron();
         width: 32px;
         height: 32px;
-        color: white;
-        font-size: 1.5rem;
-        margin-right: 10px;
       }
-      display: flex;
-      align-items: center; 
-      justify-content: space-between;
-      cursor: pointer;
+      @include redbox__design();
       width: 1023px;
-      height: 52px;
       border-radius: 5px;
       margin-top: 30px;
-      background-color: $primary-color;
     }
     display: flex;
     flex-direction: column;
@@ -188,6 +206,12 @@ main {
     margin-bottom: 38px;
   }
   .collapse__content {
+    .list__style--none {
+      list-style-type: none;
+      padding: 0;
+      padding-left: 20px;
+      margin: 0;
+    }
     max-width: 1023px;
     text-wrap: wrap;
     margin-top: 25px;
@@ -229,6 +253,7 @@ main {
     font-size: 36px;
     margin-top: 30px;
     margin-bottom: 0;
+    max-width: 80%;
   }
   .logement__localisation {
     font-weight: 500;
@@ -242,7 +267,6 @@ main {
         object-fit: cover;
         width: 100%; 
         height: 100%;
-        transition: transform 0.5s ease-in-out;
         border-radius: 25px;
       }
       width: 100%;
@@ -283,6 +307,84 @@ main {
     max-width: 100%;
     height: 415px;
    }
+   .tag__flex {
+    .tag {
+       padding-left: 20px; //J'ai mis des padding car on ne peut pas estimer la largeur d'un tag défini//
+       padding-right: 20px;
+       height: 25px;
+       background-color: $primary-color;
+       border-radius: 10px;
+       font-weight: 700;
+       font-size: 14px;
+       margin-right: 10px;
+       color: white; 
+       display: flex;
+       align-items: center;
+      }
+     display: flex;
+     flex-direction: row;
+     margin-top: 20px;
+  }
+  .rating__container {
+    .host__container {
+      .host__name {
+        font-weight: 500;
+        font-size: 18px;
+        text-wrap: wrap;
+        color: $primary-color;
+                    }
+      .host__img {
+        width: 64px; 
+        height: 64px; 
+        border-radius: 50%; 
+        margin-left: auto;
+        object-fit: cover;
+        background-color: #c4c4c4
+        }
+        display: flex;
+        flex-direction: row;
+        width: 167px;
+    }
+      .star__filled {
+        color: $primary-color;
+        font-size: 32px;
+        margin-left: 5px;
+       
+      }
+      .star__empty {
+        color: #e3e3e3;
+        font-size: 26px;
+        margin-left: 5px
+    
+      }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    bottom: 116px;
+    }
+  .flex__redbox--log {
+    .redbox__design--log {
+      .txt__redbox--log {
+         @include txt__redbox();
+          font-size: 18px; 
+          margin-left: 10px;
+          }
+      .icon__chevron {
+        @include icon__chevron();
+          width: 32px;
+          height: 32px;
+        }
+        @include redbox__design ();
+        width: 46.94%;
+        border-radius: 10px;
+        margin-top: 24px;
+        margin-bottom: 50px;
+        }
+      display: flex;
+      justify-content: space-between;
+      margin-top: -110px;
+  }
   max-width: 1240px;
   margin-right: auto;
   margin-left: auto;
@@ -415,17 +517,18 @@ footer {
     .flex__redbox {
       .redbox__design {
         .txt__redbox {
+          @include txt__redbox();
           font-size: 13px; 
-          margin-left: 10px !important;
+          margin-left: 10px;
 
         }
         .icon__chevron {
+          @include icon__chevron();
           width: 16px;
           height: 9.14px;
-        
         }
+        @include redbox__design(30px);
         width: 95vw;
-        height: 30px;
       }
     }
     .error__title {
@@ -456,10 +559,38 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   main {
-    .collapse__content {
-      width: 100%;
+    .dimension__page {
+      .tag__flex {
+        .tag {
+          padding-left: 10px; 
+        padding-right: 10px;
+        height: 18px;
+        font-size: 10px;
+        }
+      }
+      .rating__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        position:initial;
+        bottom: 116px;
+      }
+    }
+    .flex__redbox--log {
+      .redbox__design--log {
+        @include redbox__design ();
+        width: 100%;
+       
+        margin-top: 13px;
+        margin-bottom: 7px;
+      }
+      display: flex;
+      flex-direction: column;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
   }
-}
 }

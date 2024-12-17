@@ -159,7 +159,9 @@ main .cards .title__card {
   left: 20px;
   margin: 0;
   max-width: 320px;
+  height: 72px;
   text-wrap: wrap;
+  box-shadow: inset 0px -22px 10px -11px rgba(0, 0, 0, 0.05);
 }
 main .flex__redbox {
   display: flex;
@@ -169,30 +171,32 @@ main .flex__redbox {
 }
 main .flex__redbox .redbox__design {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  width: 1023px;
   height: 52px;
+  background-color: #FF6060;
+  width: 1023px;
   border-radius: 5px;
   margin-top: 30px;
-  background-color: #FF6060;
 }
 main .flex__redbox .redbox__design .txt__redbox {
   color: white;
-  margin-left: 15px !important;
   font-weight: 700;
-  font-size: 24px;
   position: relative;
   margin: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 24px;
 }
 main .flex__redbox .redbox__design .icon__chevron {
   position: relative;
-  width: 32px;
-  height: 32px;
   color: white;
   font-size: 1.5rem;
   margin-right: 10px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
 }
 main .collapse__content {
   max-width: 1023px;
@@ -201,6 +205,12 @@ main .collapse__content {
   margin-bottom: 41px;
   font-weight: 400;
   font-size: 18px;
+}
+main .collapse__content .list__style--none {
+  list-style-type: none;
+  padding: 0;
+  padding-left: 20px;
+  margin: 0;
 }
 main .error__title {
   font-weight: 700;
@@ -237,6 +247,7 @@ main .title__logement {
   font-size: 36px;
   margin-top: 30px;
   margin-bottom: 0;
+  max-width: 80%;
 }
 main .logement__localisation {
   font-weight: 500;
@@ -259,7 +270,6 @@ main .slideshow .slideshow__img--container .slideshow__img {
      object-fit: cover;
   width: 100%;
   height: 100%;
-  transition: transform 0.5s ease-in-out;
   border-radius: 25px;
 }
 main .slideshow .slideshow__arrow {
@@ -288,6 +298,96 @@ main .slideshow .slideshow__counter {
   background: transparent;
   bottom: 17px;
   right: 49%;
+}
+main .tag__flex {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+main .tag__flex .tag {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 25px;
+  background-color: #FF6060;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+main .rating__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  bottom: 116px;
+}
+main .rating__container .host__container {
+  display: flex;
+  flex-direction: row;
+  width: 167px;
+}
+main .rating__container .host__container .host__name {
+  font-weight: 500;
+  font-size: 18px;
+  text-wrap: wrap;
+  color: #FF6060;
+}
+main .rating__container .host__container .host__img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-left: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #c4c4c4;
+}
+main .rating__container .star__filled {
+  color: #FF6060;
+  font-size: 32px;
+  margin-left: 5px;
+}
+main .rating__container .star__empty {
+  color: #e3e3e3;
+  font-size: 26px;
+  margin-left: 5px;
+}
+main .flex__redbox--log {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -110px;
+}
+main .flex__redbox--log .redbox__design--log {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  height: 52px;
+  background-color: #FF6060;
+  width: 46.94%;
+  border-radius: 10px;
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+main .flex__redbox--log .redbox__design--log .txt__redbox--log {
+  color: white;
+  font-weight: 700;
+  position: relative;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-left: 10px;
+}
+main .flex__redbox--log .redbox__design--log .icon__chevron {
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
 }
 
 footer {
@@ -418,14 +518,29 @@ footer {
     margin: 0;
   }
   main .flex__redbox .redbox__design {
-    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
     height: 30px;
+    background-color: #FF6060;
+    width: 95vw;
   }
   main .flex__redbox .redbox__design .txt__redbox {
+    color: white;
+    font-weight: 700;
+    position: relative;
+    margin: 0;
+    display: flex;
+    align-items: center;
     font-size: 13px;
-    margin-left: 10px !important;
+    margin-left: 10px;
   }
   main .flex__redbox .redbox__design .icon__chevron {
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    top: 10px;
     width: 16px;
     height: 9.14px;
   }
@@ -452,8 +567,35 @@ footer {
     font-size: 12px;
   }
 }
-@media (max-width: 768px) {
-  main .collapse__content {
+@media (max-width: 830px) {
+  main .dimension__page .tag__flex .tag {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 18px;
+    font-size: 10px;
+  }
+  main .dimension__page .rating__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    position: initial;
+    bottom: 116px;
+  }
+  main .flex__redbox--log {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  main .flex__redbox--log .redbox__design--log {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 52px;
+    background-color: #FF6060;
     width: 100%;
+    margin-top: 13px;
+    margin-bottom: 7px;
   }
 }/*# sourceMappingURL=style.css.map */
