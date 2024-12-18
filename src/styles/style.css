@@ -35,7 +35,7 @@ header {
 .main__menu .align__nav li a {
   color: black;
   text-decoration: none;
-  font-size: 500;
+  font-weight: 500;
   font-size: 24px;
   height: 34px;
 }
@@ -128,7 +128,7 @@ main .cards {
   flex-wrap: wrap;
   width: 1240px;
   height: 100%;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 25px;
   margin-top: 43px;
   margin-bottom: 50px;
@@ -174,7 +174,7 @@ main .flex__redbox .redbox__design {
   justify-content: space-between;
   cursor: pointer;
   height: 52px;
-  background-color: #FF6060;
+  background-color: #ff6060;
   width: 1023px;
   border-radius: 5px;
   margin-top: 30px;
@@ -215,7 +215,7 @@ main .collapse__content .list__style--none {
 main .error__title {
   font-weight: 700;
   font-size: 288px;
-  color: #FF6060;
+  color: #ff6060;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,7 +225,7 @@ main .title__notfound {
   font-weight: 500;
   text-wrap: wrap;
   font-size: 36px;
-  color: #FF6060;
+  color: #ff6060;
   display: flex;
   margin: 0;
   margin-bottom: 139px;
@@ -242,7 +242,7 @@ main .link__home--error {
   color: black;
 }
 main .title__logement {
-  color: #FF6060;
+  color: #ff6060;
   font-weight: 500;
   font-size: 36px;
   margin-top: 30px;
@@ -308,7 +308,7 @@ main .tag__flex .tag {
   padding-left: 20px;
   padding-right: 20px;
   height: 25px;
-  background-color: #FF6060;
+  background-color: #ff6060;
   border-radius: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -333,7 +333,7 @@ main .rating__container .host__container .host__name {
   font-weight: 500;
   font-size: 18px;
   text-wrap: wrap;
-  color: #FF6060;
+  color: #ff6060;
 }
 main .rating__container .host__container .host__img {
   width: 64px;
@@ -345,7 +345,7 @@ main .rating__container .host__container .host__img {
   background-color: #c4c4c4;
 }
 main .rating__container .star__filled {
-  color: #FF6060;
+  color: #ff6060;
   font-size: 32px;
   margin-left: 5px;
 }
@@ -364,7 +364,7 @@ main .flex__redbox--log .redbox__design--log {
   justify-content: space-between;
   cursor: pointer;
   height: 52px;
-  background-color: #FF6060;
+  background-color: #ff6060;
   width: 46.94%;
   border-radius: 10px;
   margin-top: 24px;
@@ -454,6 +454,7 @@ footer {
   }
   main {
     height: 100%;
+    min-height: 850px;
   }
   main .box__dimension {
     height: 138px;
@@ -522,7 +523,7 @@ footer {
     justify-content: space-between;
     cursor: pointer;
     height: 30px;
-    background-color: #FF6060;
+    background-color: #ff6060;
     width: 95vw;
   }
   main .flex__redbox .redbox__design .txt__redbox {
@@ -593,7 +594,7 @@ footer {
     justify-content: space-between;
     cursor: pointer;
     height: 52px;
-    background-color: #FF6060;
+    background-color: #ff6060;
     width: 100%;
     margin-top: 13px;
     margin-bottom: 7px;
