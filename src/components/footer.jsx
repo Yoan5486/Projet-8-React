@@ -1,7 +1,7 @@
 // Importation des Composants Reacts
 
-import React from 'react';
-import logoKasaWhite from '../images/LOGO_white.png';
+import React from "react";
+import logoKasaWhite from "../images/LOGO_white.png";
 
 // Footer 
 

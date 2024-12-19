@@ -1,12 +1,12 @@
 // Importation des Composants Reacts
 
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/About'
-import Error404 from './pages/Error404'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import React from "react"
+import { Route, Routes } from "react-router-dom"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Error404 from "./pages/Error404"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 import Details from "./pages/Details_Logement";
 import "./styles/style.css"
 

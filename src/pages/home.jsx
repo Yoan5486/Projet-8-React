@@ -1,9 +1,9 @@
 // Importation des Composants Reacts
 
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import backgroundHome from '../images/background_home.jpeg'
-import DataLogements from '../Logements.json'
+import React from "react"
+import { useNavigate } from "react-router-dom"
+import backgroundHome from "../images/background_home.jpeg"
+import DataLogements from "../Logements.json"
 
 // Liens pour naviguer entre les pages
 

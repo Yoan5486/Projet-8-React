@@ -10,8 +10,6 @@ $primary-color: #ff6060;
 }
 
 @mixin redbox__design($height: 52px) {
-  display: flex;
-  justify-content: space-between;
   cursor: pointer;
   height: $height;
   background-color: $primary-color;
@@ -191,28 +189,30 @@ main {
         height: 32px;
       }
       @include redbox__design();
+      display: flex;
+      justify-content: space-between;
       width: 1023px;
       border-radius: 5px;
       margin-top: 30px;
+    }
+    .collapse__content {
+      .list__style--none {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      max-width: 1023px;
+      text-wrap: wrap;
+      margin-top: 25px;
+      left: 30px;
+      margin-bottom: 41px;
+      font-weight: 400;
+      font-size: 18px;
     }
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 38px;
-  }
-  .collapse__content {
-    .list__style--none {
-      list-style-type: none;
-      padding: 0;
-      padding-left: 20px;
-      margin: 0;
-    }
-    max-width: 1023px;
-    text-wrap: wrap;
-    margin-top: 25px;
-    margin-bottom: 41px;
-    font-weight: 400;
-    font-size: 18px;
   }
   .error__title {
     font-weight: 700;
@@ -276,17 +276,14 @@ main {
       z-index: 10;
       background: transparent;
     }
-
     .slideshow__arrow--left {
       left: 23px;
       bottom: 170px;
     }
-
     .slideshow__arrow--right {
       right: 23px;
       bottom: 170px;
     }
-
     .slideshow__counter {
       position: absolute;
       font-weight: 500;
@@ -358,21 +355,39 @@ main {
   }
   .flex__redbox--log {
     .redbox__design--log {
-      .txt__redbox--log {
-        @include txt__redbox();
-        font-size: 18px;
-        margin-left: 10px;
-      }
-      .icon__chevron {
-        @include icon__chevron();
-        width: 32px;
-        height: 32px;
+      .redbox__design {
+        .txt__redbox {
+          @include txt__redbox();
+          font-size: 18px;
+          margin-left: 10px;
+        }
+        .icon__chevron {
+          @include icon__chevron();
+          width: 32px;
+          height: 32px;
+        }
+        @include redbox__design();
+        display: flex;
+       justify-content: space-between;
       }
       @include redbox__design();
       width: 46.94%;
       border-radius: 10px;
       margin-top: 24px;
       margin-bottom: 50px;
+    }
+    .collapse__content {
+      .list__style--none {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      max-width: 1023px;
+      text-wrap: wrap;
+      margin-top: 25px;
+      margin-bottom: 41px;
+      font-weight: 400;
+      font-size: 18px;
     }
     display: flex;
     justify-content: space-between;
@@ -518,8 +533,11 @@ footer {
           height: 9.14px;
         }
         @include redbox__design(30px);
-        width: 95vw;
+        width: 85vw;
+        margin-left: auto;
+        margin-right: auto;
       }
+      
     }
     .error__title {
       font-size: 8em;
@@ -574,7 +592,6 @@ footer {
       .redbox__design--log {
         @include redbox__design();
         width: 100%;
-
         margin-top: 13px;
         margin-bottom: 7px;
       }

@@ -1,6 +1,7 @@
 // Importation du Composant React
 
 import React, { useState } from "react";
+import PropTypes from 'prop-types';
 
 // Défilement Carrousel 
 
@@ -47,6 +48,13 @@ const Slideshow = ({ pictures }) => {
         </div>
     )
 }
+
+// PropTypes pour le débogage
+
+/*Slideshow.propTypes = {
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+}*/
 
 // Exportation du composant du Carrousel
 
