@@ -42,20 +42,24 @@ body {
   margin-bottom: 0;
   padding: 0;
 }
+
 header {
   margin-top: 45px;
   max-width: 1244px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .main__menu {
   display: flex;
   flex-direction: row;
+
   .margin__logo {
     padding: 0;
     width: 210px;
     height: 68px;
   }
+
   .align__nav {
     li a {
       color: black;
@@ -64,16 +68,19 @@ header {
       font-size: 24px;
       height: 34px;
     }
+
     .link__home {
       text-decoration: underline solid;
       width: 136px;
       margin-right: 57px;
       text-align: right;
     }
+
     .link__about {
       width: 116px;
       text-align: right;
     }
+
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -82,10 +89,12 @@ header {
     padding: 0;
   }
 }
+
 main {
   .dimension__page {
     min-height: 800px;
   }
+
   .img__background--about {
     object-fit: cover;
     @include background__img();
@@ -95,24 +104,29 @@ main {
     opacity: 60%;
     bottom: 221px;
   }
+
   .background__black--about {
     background-color: black;
     @include background__img();
     z-index: 1;
     top: 38px;
   }
+
   .box__dimension {
     height: 273px;
   }
+
   .box__dimension--about {
     height: 269px;
   }
+
   .background__black {
     background-color: black;
     @include background__img();
     z-index: 1;
     top: 52px;
   }
+
   .img__background--home {
     object-fit: cover;
     @include background__img();
@@ -122,6 +136,7 @@ main {
     opacity: 60%;
     bottom: 221px;
   }
+
   .title__home {
     color: white;
     position: absolute;
@@ -136,6 +151,7 @@ main {
     margin: 0;
     z-index: 15;
   }
+
   .cards {
     .card {
       width: 340px;
@@ -145,12 +161,14 @@ main {
       margin-right: 10px;
       margin-left: 50px;
     }
+
     .img__logement {
       object-fit: cover;
       width: 340px;
       height: 340px;
       border-radius: 10px;
     }
+
     .title__card {
       font-weight: 700;
       font-size: 18px;
@@ -164,6 +182,7 @@ main {
       text-wrap: wrap;
       box-shadow: inset 0px -22px 10px -11px rgba(0, 0, 0, 0.05);
     }
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -176,6 +195,7 @@ main {
     padding-top: 6px;
     padding-bottom: 43px;
   }
+
   .flex__redbox {
     .redbox__design {
       .txt__redbox {
@@ -183,11 +203,13 @@ main {
         margin-left: 15px;
         font-size: 24px;
       }
+
       .icon__chevron {
         @include icon__chevron();
         width: 32px;
         height: 32px;
       }
+
       @include redbox__design();
       display: flex;
       justify-content: space-between;
@@ -195,25 +217,31 @@ main {
       border-radius: 5px;
       margin-top: 30px;
     }
+
     .collapse__content {
       .list__style--none {
         list-style-type: none;
         padding: 0;
         margin: 0;
       }
+
       max-width: 1023px;
       text-wrap: wrap;
       margin-top: 25px;
-      left: 30px;
       margin-bottom: 41px;
       font-weight: 400;
       font-size: 18px;
+      margin-left: 20px;
     }
+
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 38px;
+    width: 71%;
+    margin: auto;
   }
+
   .error__title {
     font-weight: 700;
     font-size: 288px;
@@ -223,6 +251,7 @@ main {
     justify-content: center;
     height: 263px;
   }
+
   .title__notfound {
     font-weight: 500;
     text-wrap: wrap;
@@ -233,6 +262,7 @@ main {
     margin-bottom: 139px;
     justify-content: center;
   }
+
   .link__home--error {
     text-decoration: underline solid;
     font-weight: 500;
@@ -242,20 +272,7 @@ main {
     justify-content: center;
     color: black;
   }
-  .title__logement {
-    color: $primary-color;
-    font-weight: 500;
-    font-size: 36px;
-    margin-top: 30px;
-    margin-bottom: 0;
-    max-width: 80%;
-  }
-  .logement__localisation {
-    font-weight: 500;
-    font-size: 18px;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
+
   .slideshow {
     .slideshow__img--container {
       .slideshow__img {
@@ -264,9 +281,11 @@ main {
         height: 100%;
         border-radius: 25px;
       }
+
       width: 100%;
       height: 100%;
     }
+
     .slideshow__arrow {
       position: absolute;
       font-size: 5rem;
@@ -276,14 +295,17 @@ main {
       z-index: 10;
       background: transparent;
     }
+
     .slideshow__arrow--left {
       left: 23px;
       bottom: 170px;
     }
+
     .slideshow__arrow--right {
       right: 23px;
       bottom: 170px;
     }
+
     .slideshow__counter {
       position: absolute;
       font-weight: 500;
@@ -294,65 +316,100 @@ main {
       bottom: 17px;
       right: 49%;
     }
+
     margin-top: 50px;
     position: relative;
     max-width: 100%;
     height: 415px;
   }
+  .container__log {
+    .title__logement {
+      color: $primary-color;
+      font-weight: 500;
+      font-size: 36px;
+      margin: 0;
+      margin-top: 6px;
+
+    }
+
+    .logement__localisation {
+      font-weight: 500;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .rating__container {
+      .host__container {
+        .host__name {
+          font-weight: 500;
+          font-size: 18px;
+          text-wrap: wrap;
+          color: $primary-color;
+        }
+
+        .host__img {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          margin-left: auto;
+          object-fit: cover;
+          background-color: #c4c4c4;
+        }
+
+        display: flex;
+        flex-direction: row;
+        width: 167px;
+      }
+
+      .star__filled {
+        color: $primary-color;
+        font-size: 26px;
+        margin-left: 5px;
+      }
+
+      .star__empty {
+        color: #e3e3e3;
+        font-size: 26px;
+        margin-left: 5px;
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .tag__position {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 169px;
+  }
+
   .tag__flex {
     .tag {
-      padding-left: 20px; //J'ai mis des padding car on ne peut pas estimer la largeur d'un tag défini//
-      padding-right: 20px;
       height: 25px;
       background-color: $primary-color;
       border-radius: 10px;
       font-weight: 700;
       font-size: 14px;
       margin-right: 10px;
+      width: 15vh;
       color: white;
       display: flex;
       align-items: center;
+      justify-content: center;
     }
+
     display: flex;
-    flex-direction: row;
-    margin-top: 20px;
+    margin-top: 0;
+    margin-right: 700px; 
   }
-  .rating__container {
-    .host__container {
-      .host__name {
-        font-weight: 500;
-        font-size: 18px;
-        text-wrap: wrap;
-        color: $primary-color;
-      }
-      .host__img {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        margin-left: auto;
-        object-fit: cover;
-        background-color: #c4c4c4;
-      }
-      display: flex;
-      flex-direction: row;
-      width: 167px;
-    }
-    .star__filled {
-      color: $primary-color;
-      font-size: 32px;
-      margin-left: 5px;
-    }
-    .star__empty {
-      color: #e3e3e3;
-      font-size: 26px;
-      margin-left: 5px;
-    }
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: relative;
-    bottom: 116px;
-  }
+
   .flex__redbox--log {
     .redbox__design--log {
       .redbox__design {
@@ -361,42 +418,49 @@ main {
           font-size: 18px;
           margin-left: 10px;
         }
+
         .icon__chevron {
           @include icon__chevron();
           width: 32px;
           height: 32px;
         }
+
         @include redbox__design();
         display: flex;
-       justify-content: space-between;
+        justify-content: space-between;
       }
-      @include redbox__design();
+
       width: 46.94%;
       border-radius: 10px;
       margin-top: 24px;
-      margin-bottom: 50px;
     }
+
     .collapse__content {
       .list__style--none {
         list-style-type: none;
         padding: 0;
         margin: 0;
       }
-      max-width: 1023px;
+
+      max-width: 582px;
       text-wrap: wrap;
       margin-top: 25px;
       margin-bottom: 41px;
       font-weight: 400;
       font-size: 18px;
+      margin-left: 20px;
     }
+
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
-    margin-top: -110px;
   }
+
   max-width: 1240px;
   margin-right: auto;
   margin-left: auto;
 }
+
 footer {
   background-color: black;
   display: flex;
@@ -408,10 +472,12 @@ footer {
   margin-right: auto;
   margin-bottom: 0;
 }
+
 .logo__white {
   margin-top: 66px;
   margin-bottom: 28.5px;
 }
+
 .copyright {
   color: white;
   margin-top: 0;
@@ -438,40 +504,49 @@ footer {
     margin-left: 20px;
     margin-right: 20px;
   }
+
   header {
     margin: 20px 20px 0 20px;
     width: 89.33px;
   }
+
   .main__menu {
     .margin__logo {
       padding: 0;
       width: 145px;
       height: 46.88px;
     }
+
     .align__nav {
       li a {
         font-size: 12px;
         height: 17px;
         text-transform: uppercase;
       }
+
       .link__home {
         width: 55px;
         margin-right: 26px;
       }
+
       .link__about {
         width: 66px;
       }
+
       margin-left: 43px;
     }
   }
+
   main {
     .box__dimension {
       height: 138px;
     }
+
     .background__black {
       @include background__img(89.33%, 111px);
       top: 25px;
     }
+
     .img__background--home {
       margin-top: 27px;
       bottom: 113px;
@@ -479,6 +554,7 @@ footer {
       width: 100%;
       @include background__img(89.33%, 111px);
     }
+
     .title__home {
       text-wrap: wrap;
       font-size: 24px;
@@ -488,6 +564,7 @@ footer {
       left: 35px;
       text-shadow: none;
     }
+
     .cards {
       .card {
         width: 335px;
@@ -499,19 +576,23 @@ footer {
         cursor: pointer;
         transition: transform 0.2s ease;
       }
+
       .card:hover {
         transform: scale(1.02);
       }
+
       .img__logement {
         object-fit: cover;
         width: 335px;
         height: 255px;
         border-radius: 10px;
       }
+
       .title__card {
         left: 20px;
         margin: 0;
       }
+
       flex-direction: row;
       width: 89.33%;
       height: 100%;
@@ -520,6 +601,7 @@ footer {
       margin: 6px 0 27px 0;
       padding: 0;
     }
+
     .flex__redbox {
       .redbox__design {
         .txt__redbox {
@@ -527,78 +609,138 @@ footer {
           font-size: 13px;
           margin-left: 10px;
         }
+
         .icon__chevron {
           @include icon__chevron();
           width: 16px;
           height: 9.14px;
         }
+
         @include redbox__design(30px);
         width: 85vw;
         margin-left: auto;
         margin-right: auto;
       }
-      
     }
+
     .error__title {
       font-size: 8em;
     }
+
     .title__notfound {
       margin-left: 15.33%;
       margin-right: 15.33%;
     }
+
     .slideshow {
       .slideshow__arrow {
         font-size: 1.5rem;
       }
+
       .slideshow__arrow--left {
         bottom: 192px;
         left: 5.84px;
       }
+
       .slideshow__arrow--right {
         right: 5.84px;
         bottom: 210px;
       }
     }
-    height: 100%;
-    min-height: 850px;
-  }
+    .container__log {
+      .tag__flex {
+          .tag {
+            height: 25px;
+            background-color: $primary-color;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            margin-right: 10px;
+            width: 15vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+      
+          display: flex;
+          margin-top: 0;
+          margin-right: 500px;
+      
+      }
+    }
+  height: 100%;
+  min-height: 850px;
+}
+
   .copyright {
     width: 133px;
     font-size: 12px;
   }
+ 
 }
 
 @media (max-width: 830px) {
   main {
-    .dimension__page {
-      .tag__flex {
-        .tag {
-          padding-left: 10px;
-          padding-right: 10px;
-          height: 18px;
-          font-size: 10px;
+    .container__log {
+      .tag__position {
+        .tag__flex {
+          .tag {
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            height: 18px;
+            font-size: 0.7vh;
+          }
+          margin-bottom: 0;
+          margin-right: -230px;
+          width: 100%;
         }
-      }
-      .rating__container {
+        .rating__container {
+          .host__container {
+            margin-left: 11vh;
+            display: flex;
+            align-items: center;
+           
+          }
+          .host__name {
+            font-size: 12px;
+            margin-top: 16px;
+          }
+          .host__img {
+            width: 32px;
+            height: 32px;
+            margin-left: 10.5px;
+          }
+          .star__empty {
+            font-size: 14px;
+          }
+          .star {
+            font-size: 14px;
+          }
+          
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+        }
         display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-        position: initial;
-        bottom: 116px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        width: 100%;
       }
+      display: inline;
     }
+
     .flex__redbox--log {
       .redbox__design--log {
-        @include redbox__design();
         width: 100%;
         margin-top: 13px;
         margin-bottom: 7px;
       }
+
       display: flex;
       flex-direction: column;
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 27px;
     }
   }
 }

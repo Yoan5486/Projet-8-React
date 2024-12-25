@@ -51,10 +51,9 @@ const Slideshow = ({ pictures }) => {
 
 // PropTypes pour le débogage
 
-/*Slideshow.propTypes = {
-    title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
-}*/
+Slideshow.propTypes = {
+    pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
+}
 
 // Exportation du composant du Carrousel
 
