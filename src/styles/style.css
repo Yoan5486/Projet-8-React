@@ -313,7 +313,7 @@ main .container__log .rating__container {
 main .container__log .rating__container .host__container {
   display: flex;
   flex-direction: row;
-  width: 167px;
+  width: 100%;
 }
 main .container__log .rating__container .host__container .host__name {
   font-weight: 500;
@@ -340,18 +340,11 @@ main .container__log .rating__container .star__empty {
   font-size: 26px;
   margin-left: 5px;
 }
-main .tag__position {
+main .container__log .tag__flex {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 169px;
+  margin-top: 20px;
 }
-main .tag__flex {
-  display: flex;
-  margin-top: 0;
-  margin-right: 700px;
-}
-main .tag__flex .tag {
+main .container__log .tag__flex .tag {
   height: 25px;
   background-color: #ff6060;
   border-radius: 10px;
@@ -588,24 +581,6 @@ footer {
     right: 5.84px;
     bottom: 210px;
   }
-  main .container__log .tag__flex {
-    display: flex;
-    margin-top: 0;
-    margin-right: 500px;
-  }
-  main .container__log .tag__flex .tag {
-    height: 25px;
-    background-color: #ff6060;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    margin-right: 10px;
-    width: 15vh;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .copyright {
     width: 133px;
     font-size: 12px;
@@ -615,46 +590,42 @@ footer {
   main .container__log {
     display: inline;
   }
-  main .container__log .tag__position {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    width: 100%;
-  }
-  main .container__log .tag__position .tag__flex {
+  main .container__log .tag__flex {
     margin-bottom: 0;
     margin-right: -230px;
+    margin-top: 10px;
     width: 100%;
   }
-  main .container__log .tag__position .tag__flex .tag {
+  main .container__log .tag__flex .tag {
     padding-left: 2.5%;
     padding-right: 2.5%;
     height: 18px;
     font-size: 0.7vh;
   }
-  main .container__log .tag__position .rating__container {
+  main .container__log .rating__container {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
   }
-  main .container__log .tag__position .rating__container .host__container {
-    margin-left: 11vh;
+  main .container__log .rating__container .host__container {
     display: flex;
     align-items: center;
+    width: 105px;
   }
-  main .container__log .tag__position .rating__container .host__name {
+  main .container__log .rating__container .host__container .host__name {
     font-size: 12px;
     margin-top: 16px;
   }
-  main .container__log .tag__position .rating__container .host__img {
+  main .container__log .rating__container .host__container .host__img {
     width: 32px;
     height: 32px;
     margin-left: 10.5px;
   }
-  main .container__log .tag__position .rating__container .star__empty {
+  main .container__log .rating__container .host__container .star__empty {
     font-size: 14px;
   }
-  main .container__log .tag__position .rating__container .star {
+  main .container__log .rating__container .host__container .star {
     font-size: 14px;
   }
   main .flex__redbox--log {

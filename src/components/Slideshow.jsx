@@ -20,7 +20,7 @@ const Slideshow = ({ pictures }) => {
             prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
         )
     }
-// Intégration de la Page
+    // Intégration de la Page
 
     return (
         // Design de l'image du carrousel

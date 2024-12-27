@@ -7,7 +7,7 @@ import AppRouter from "./App";
 import "./styles/style.css"
 
 // Container
- 
+
 const container = document.getElementById('root');
 const root = createRoot(container);
 

@@ -1,9 +1,9 @@
 // Importation des Composants Reacts
 
-import React from "react"
-import { useNavigate } from "react-router-dom"
-import backgroundHome from "../images/background_home.jpeg"
-import DataLogements from "../Logements.json"
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import backgroundHome from "../images/background_home.jpeg";
+import DataLogements from "../Logements.json";
 
 // Liens pour naviguer entre les pages
 
@@ -13,10 +13,10 @@ const Home = () => {
     navigate(`/details/${id}`)
   }
 
-// Intégration de la page
+  // Intégration de la page
 
   return (
- // Arrière plan de l'image 
+    // Arrière plan de l'image 
     <div>
       <div className="box__dimension">
         <div className="background__black"></div>
@@ -38,4 +38,4 @@ const Home = () => {
 
 // Exportation de la page d'Accueil
 
-export default Home
+export default Home;

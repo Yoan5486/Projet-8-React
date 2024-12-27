@@ -43,28 +43,26 @@ const Details = () => {
             <div className="dimension__page">
                 <Slideshow pictures={logement.pictures} />
                 <div className="container__log">
-                    <div>    
+                    <div>
                         <h1 className="title__logement">{logement.title}</h1>
                         <p className="logement__localisation">{logement.location}</p>
-                    </div>
-                    <div className="tag__position">
-                       {/*Affichage Infos Vendeur*/}
-                        <div className="rating__container">
-                            <div className="host__container">
-                                <p className="host__name">{logement.host.name}</p>
-                                <img src={logement.host.picture} alt={`Hôte : ${logement.host.name}`} className="host__img" />
-                            </div>
-                            <div>
-                             {/*Notation du Vendeur*/}
-                            {Array.from({ length: totalStars }, (_, index) => (
-                                <span key={index} className={`star ${index < parseInt(logement.rating) ? "star__filled" : "star__empty"}`}>★</span>
-                                 ))}
-                            </div>
-                        </div>
                         {/*Tags*/}
                         <div className="tag__flex">
                             {logement.tags.map((tag, index) => (
-                             <span key={index} className="tag">{tag}</span>
+                                <span key={index} className="tag">{tag}</span>
+                            ))}
+                        </div>
+                    </div>
+                    {/*Affichage Infos Vendeur*/}
+                    <div className="rating__container">
+                        <div className="host__container">
+                            <p className="host__name">{logement.host.name}</p>
+                            <img src={logement.host.picture} alt={`Hôte : ${logement.host.name}`} className="host__img" />
+                        </div>
+                        <div>
+                            {/*Notation du Vendeur*/}
+                            {Array.from({ length: totalStars }, (_, index) => (
+                                <span key={index} className={`star ${index < parseInt(logement.rating) ? "star__filled" : "star__empty"}`}>★</span>
                             ))}
                         </div>
                     </div>
@@ -72,11 +70,11 @@ const Details = () => {
                 {/*Collapses Description & Équipements */}
                 <div className="flex__redbox--log">
                     <Collapse
-                      title="Description"
-                      content={logement.description}
-                      isOpen={openIndexes.includes(0)}
-                      toggleCollapse={() => toggleCollapse(0)}
-                      className="redbox__design--log"
+                        title="Description"
+                        content={logement.description}
+                        isOpen={openIndexes.includes(0)}
+                        toggleCollapse={() => toggleCollapse(0)}
+                        className="redbox__design--log"
                     />
                     <Collapse
                         title="Équipements"
@@ -86,9 +84,9 @@ const Details = () => {
                                     <li key={index}>{equipment}</li>
                                 ))}
                             </ul>}
-                         isOpen={openIndexes.includes(1)}
+                        isOpen={openIndexes.includes(1)}
                         toggleCollapse={() => toggleCollapse(1)}
-                        className="redbox__design--log"/>
+                        className="redbox__design--log" />
                 </div>
             </div>
         )
